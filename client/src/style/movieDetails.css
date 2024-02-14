@@ -1,0 +1,21 @@
+.review-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  button {
+    box-sizing: border-box;
+  }
+
+  .review-container {
+    width: 95%;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,48 @@
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.movie-item {
+  margin-right: 1%;
+  margin-bottom: 20px;
+  border: 1px solid gray; 
+  padding: 10px; 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-image {
+  width: 100%;
+  height: auto;
+  
+}
+
+.movie-title {
+  text-align: left;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-top: auto;
+}
+
+@media only screen and (max-width: 540px) {
+  .movie-item {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 541px) and (max-width:1024px) {
+  .movie-item {
+    width: 48%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .movie-item {
+    width: 32%;
+  }
+}

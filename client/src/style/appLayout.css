@@ -1,0 +1,93 @@
+.app {
+  margin: 5px;
+}
+
+.title {
+  font-size: 12px;
+  border: 1px solid rgb(0, 255, 179);
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  border: 1px solid orange;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 5px 0;
+}
+
+.content {
+  width: 100%;
+  border: 1px solid lightskyblue;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.menu-list li {
+  margin-right: 15px;
+}
+
+.exit-button {
+  background-color: lightcoral;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: lightcoral;
+  color: aliceblue;
+  height: 100%;
+  font-size: 36px;
+}
+
+.btn-primary {
+  background-color: coral;
+  color: whitesmoke;
+}
+
+.btn-secondary {
+  background-color: cornflowerblue;
+  color: whitesmoke;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction:column;
+    align-items: stretch;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .menu-list {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .menu-list {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    align-content: flex-start;
+  }
+
+  .menu-list li {
+    box-sizing: border-box;
+    flex: 0 0 29%;
+  }
+}

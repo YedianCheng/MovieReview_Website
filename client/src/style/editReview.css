@@ -1,0 +1,45 @@
+.edit-review-container {
+  width: 90%;
+  margin: 10px;
+}
+
+.review-form .form-group {
+  margin-bottom: 15px;
+}
+
+.review-form .title-textarea {
+  width: 50%;
+  height: 30px; 
+  padding: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  font-size: 16px; 
+}
+
+.review-form .content-textarea {  
+  width: 100%;  
+  height: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+  .review-form .title-textarea {
+    width: 50%;
+    height: 20px; 
+    font-size: 10px;
+  }
+  .review-form .content-textarea {    
+    width: 90%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 10px;
+    
+  }
+
+}
